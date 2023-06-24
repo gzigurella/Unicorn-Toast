@@ -32,7 +32,7 @@ function Template({name, surname, job, hobby, interest} : TemplateProps) {
       <br/><br/>While my professional pursuits keep me busy I cannot help but be fueled by an insatiable curiosity. 
       <br/>At this moment in time my interest lies in {interest}. 
 
-      <a href='mailto:gzigurella99@proton.me?
+      <a href='mailto:jobs@gzigurella.dev?
         subject=Hello%20Gabriele!
         &body=I%20would%20like%20to%20get%20in%20touch%20with%20you%20to%20discuss%20about%20...'>
         <button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="mt-6 flex items-center gap-2 px-4 py-2 text-indigo-600 bg-purple-200 rounded-lg duration-150 hover:bg-yellow-200 hover:text-black active:bg-indigo-200">
