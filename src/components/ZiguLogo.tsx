@@ -10,7 +10,7 @@ export default function ZiguLogo() {
 
     return (
         <div className="mx-4 mt-8 flex flex-col items-center justify-start w-full h-1/4">
-            <a className="mr-auto flex w-1/2 h-1/2 gap-3" href='/'>
+            <a className="mr-auto flex w-full h-1/2 gap-3" href='/'>
                 <Image className='rotating-image' priority={true} src={Logo} alt={"Site Logo"} width={32}/>
                 <div className="text-4xl font-bold text-center text-slate-200">Gabriele Zigurella</div>
             </a>
