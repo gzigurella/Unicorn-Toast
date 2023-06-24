@@ -20,7 +20,7 @@ export default () => {
     ]
 
     return (
-        <nav className="bg-zinc-800 md:bg-transparent border-b w-full md:static md:text-sm md:border-none text-slate-100">
+        <nav className="bg-zinc-800 md:bg-transparent border-b w-full md:static md:text-sm md:border-none">
             <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <Logo />
@@ -48,8 +48,9 @@ export default () => {
                         {
                             navigation.map((item, idx) => {
                                 return (
-                                    <li key={idx} className={`hover:${item.color} ${pathname === item.path ? `underline ${item.color}` : "text-slate-100"}`}>
-                                        <a href={item.path} className="flex items-center justify-start w-full hover:cursor-pointer gap-x-1">
+                                    <li key={idx}>
+                                        <a href={item.path} className={`hover:${item.color} ${pathname === item.path ? `underline ${item.color}` : "text-slate-100"} 
+                                            flex items-center justify-start w-full hover:cursor-pointer gap-x-1`}>
                                             <item.icon className='mr-1'/><span className='text-md'>{item.title}</span>
                                         </a>
                                     </li>
@@ -62,7 +63,7 @@ export default () => {
                         {
                             socials.map((item, idx) => {
                                 return (
-                                    <li key={idx} className={`text-xl hover:${item.color}`}>
+                                    <li key={idx} className={`text-xl hover:${item.color} text-slate-100`}>
                                         <a href={item.path} target="_blank" className='flex items-center justify-start w-full hover:cursor-pointer gap-x-1'>
                                             <item.icon/>
                                         </a>
