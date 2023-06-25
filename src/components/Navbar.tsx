@@ -3,24 +3,26 @@
 import Logo from './ZiguLogo';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { FaCircleInfo, FaGithubAlt, FaLinkedin, FaPenRuler } from 'react-icons/fa6';
+import { FaCircleInfo, FaGithubAlt, FaLinkedin, FaPenRuler, FaMastodon, FaCompassDrafting } from 'react-icons/fa6';
 
 export default () => {
     const [showMenu, setShowMenu] = useState(false);
     const pathname = usePathname();
 
     const navigation = [
-        { title: "About", path: "/", color: "text-purple-300", icon: FaCircleInfo },
-        { title: "Blog", path: "/blog", color: "text-green-300" , icon: FaPenRuler },
+        { title: "About", path: "/", color: "text-purple-300"},
+        { title: "Tech Stack", path: "/tech", color: "text-yellow-300"},
+        { title: "Blog", path: "/blog", color: "text-green-300"},
     ]
 
     const socials = [
-        { title: "Github", path: "https://github.com/gzigurella", color: "text-brown-300", icon: FaGithubAlt},
-        { title: "LinkedIn", path: "https://www.linkedin.com/in/gabrielezigurella?trk=public_profile_browsemap", color: "text-indigo-400", icon: FaLinkedin }
+        { title: "Github", path: "https://github.com/gzigurella", color: "text-brown-300"},
+        { title: "LinkedIn", path: "https://www.linkedin.com/in/gabrielezigurella?trk=public_profile_browsemap", color: "text-indigo-400"},
+        //{ title: "Mastodoon" path: "", color: "text-cyan-300"},
     ]
 
     return (
-        <nav className="bg-zinc-800 md:bg-transparent border-b w-full md:static md:text-sm md:border-none">
+        <nav className="bg-zinc-600 md:bg-transparent border-b w-full md:static md:text-sm md:border-none">
             <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <Logo />
@@ -49,9 +51,12 @@ export default () => {
                             navigation.map((item, idx) => {
                                 return (
                                     <li key={idx}>
-                                        <a href={item.path} className={`hover:${item.color} ${pathname === item.path ? `underline ${item.color}` : "text-slate-100"} 
+                                        <a href={item.path} className={`hover:underline ${pathname === item.path ? `underline ${item.color}` : "text-slate-100"} 
                                             flex items-center justify-start w-full hover:cursor-pointer gap-x-1`}>
-                                            <item.icon className='mr-1'/><span className='text-md'>{item.title}</span>
+                                            {item.title === "About" && <FaCircleInfo className='mr-1'/>}
+                                            {item.title === "Blog" && <FaPenRuler className='mr-1'/>}
+                                            {item.title === "Tech Stack" && <FaCompassDrafting className='mr-1'/>}
+                                            <span className='text-md'>{item.title}</span>
                                         </a>
                                     </li>
                                 )
@@ -63,9 +68,12 @@ export default () => {
                         {
                             socials.map((item, idx) => {
                                 return (
-                                    <li key={idx} className={`text-xl hover:${item.color} text-slate-100`}>
-                                        <a href={item.path} target="_blank" className='flex items-center justify-start w-full hover:cursor-pointer gap-x-1'>
-                                            <item.icon/>
+                                    <li key={idx} >
+                                        <a href={item.path} target="_blank" className='flex items-center justify-start w-full hover:cursor-pointer 
+                                            gap-x-1 text-slate-100 text-2xl'>
+                                            {item.title === "Github" && <FaGithubAlt className='mr-1'/>}
+                                            {item.title === "LinkedIn" && <FaLinkedin className='mr-1'/>}
+                                            {item.title === "Mastodoon" && <FaMastodon className='mr-1'/>}
                                         </a>
                                     </li>
                                 )
