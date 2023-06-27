@@ -38,9 +38,17 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center gap-6 w-full md:hidden'>
-                    <div className='text-slate-200 text-md'>
-                        Please visit this page on a desktop browser to read about my tech stack.
+                <div className='flex flex-col items-center space-between mb-auto mt-20 gap-6 w-full md:hidden'>
+                    <div className='text-2xl text-slate-100 mx-auto'><span className='font-bold'>Swipe the cards</span> to read about the technologies I use!</div>
+                    <Deck cards={cards} />
+                    <div className='text-lg text-slate-100 mx-auto'>Need work with a particular tech?<br />
+                        <span>
+                        <a className='underline' href='mailto:jobs@gzigurella.dev?
+                            subject=Hello%20Gabriele!
+                            &body=I%20would%20like%20to%20get%20in%20touch%20with%20you%20to%20discuss%20about%20...'>
+                            Get in touch
+                        </a>
+                        </span>
                     </div>
                 </div>
             </Suspense>

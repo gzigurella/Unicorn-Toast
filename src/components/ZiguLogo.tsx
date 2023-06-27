@@ -14,7 +14,7 @@ export default function ZiguLogo() {
                 <Image className='rotating-image' priority={true} src={Logo} alt={"Site Logo"} width={32}/>
                 <div className="md:text-4xl text-2xl font-bold text-center text-slate-200">Gabriele Zigurella</div>
             </a>
-            <div className="mr-auto ml-12 mt-1 flex text-md font-bold text-center text-purple-300">                
+            <div className="mr-auto ml-8 md:ml-12 mt-1 flex text-md font-bold text-center text-purple-300">                
                 <Typewriter options={{
                         strings: words,
                         autoStart: true,
