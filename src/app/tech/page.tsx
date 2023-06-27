@@ -1,10 +1,13 @@
 import { Suspense } from 'react';
 import Loading from '../loading';
 import Pyramid from '@/components/PyramidStack';
-import { IMAGES, ImageType } from '@/services/getTechStack';
+import { IMAGES, ImageType, CARDS } from '@/services/getTechStack';
+import Deck from '@/components/Deck';
+import { CardProps } from '@/components/Card';
 
 export default function Page() {
     const levels: ImageType[][] = IMAGES;
+    const cards: CardProps[] = CARDS;
 
     return (
         <div className='flex items-center justify-center min-h-screen min-w-screen mx-10'>
@@ -37,8 +40,7 @@ export default function Page() {
                 </div>
                 <div className='flex flex-col items-center justify-center gap-6 w-full md:hidden'>
                     <div className='text-slate-200 text-md'>
-                        Please visit this page on a desktop browser to read mode of my tech stack.
-                        <Pyramid levels={levels} />
+                        <Deck cards={cards} />
                     </div>
                 </div>
             </Suspense>
