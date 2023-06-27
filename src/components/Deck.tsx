@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { useSprings, animated } from 'react-spring';
 import {Card} from './Card';
