@@ -25,7 +25,7 @@ function Template({name, surname, job, hobby} : TemplateProps) {
 
   return (
     <div className="container">
-      <span className="text-4xl font-bold">Hello there!</span><br/>I'm <span className="text-lg text-purple-300">{name} {surname}</span> and I currently hold a position as <span className="text-cyan-300">{job}</span>,<br/>
+      <span className="2xl:text-8xl text-4xl font-bold">Hello there!</span><br/>I'm <span className="xl:text-2xl text-lg text-purple-300">{name} {surname}</span> and I currently hold a position as <span className="text-cyan-300">{job}</span>,<br/>
       <span> where I bring my unique blend of creativity and determination to the table each day. <br/><br/> It is in the world of <span className="text-yellow-300">{hobby}</span> where my true passions lie. 
       Its' a place that provides me with endless opportunities to be creative and explore new possibilities. 
 
@@ -51,7 +51,7 @@ export default function Page() {
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="#D8B4FE" d="M58.6,-50.8C69.9,-32.6,68.7,-8.6,63.8,15.2C58.9,39.1,50.3,62.8,33.6,71.4C17,80,-7.7,73.5,-25.5,61.6C-43.3,49.7,-54.3,32.3,-56.7,14.9C-59.2,-2.5,-53.1,-20,-42.2,-38.1C-31.3,-56.2,-15.7,-75,4,-78.2C23.7,-81.4,47.4,-69,58.6,-50.8Z" transform="translate(100 100)" />
           </svg>
-          <Image src={Peep} alt="Peep" className='absolute lg:bottom-10 bottom-0 right-0' width={500}/>
+          <Image src={Peep} loading='eager' alt="Peep" className=' w-full absolute lg:left-8 bottom-0 right-0' width={500}/>
         </div>
         <div id="text" className="md:w-3/5 mx-10 mb-10 md:mx-0 md:mb-0">
           <Template name="Gabriele" surname="Zigurella" job="Software Engineer"
