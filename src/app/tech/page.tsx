@@ -40,7 +40,7 @@ export default function Page() {
                 </div>
                 <div className='flex flex-col items-center justify-center gap-6 w-full md:hidden'>
                     <div className='text-slate-200 text-md'>
-                        <Deck cards={cards} />
+                        Please visit this page on a desktop browser to read about my tech stack.
                     </div>
                 </div>
             </Suspense>
