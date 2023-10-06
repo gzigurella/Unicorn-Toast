@@ -4,8 +4,7 @@ import Header from "@/components/cv/CVHeader";
 import Loading from "../loading";
 import { Suspense } from "react";
 import Section from "@/components/cv/CVSection";
-import { getEducation, getWorkExperience } from "@/services/cv.service";
-import { Panel } from "rsuite";
+import { getEducation, getExperience, getWorkExperience } from "@/services/cv.service";
 
 const Page = () => {
     return (
@@ -14,7 +13,7 @@ const Page = () => {
                 <Header />
                 <Section title="Work Experience" timeline={getWorkExperience()} />
                 <Section title="Education" timeline={getEducation()} />
-                <Section title="Experiences" timeline={getWorkExperience()} />
+                <Section title="Extra Activities" timeline={getExperience()} />
                 //TODO: Skill section as footer
             </div>
         </Suspense>

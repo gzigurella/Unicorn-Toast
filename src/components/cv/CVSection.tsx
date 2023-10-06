@@ -20,7 +20,7 @@ const Section = ({title, timeline} : SectionProps) => {
             <div className={`self-start section-${title}-title w-1/4`}>
                 <h1 className="header-name text-3xl font-medium underline decoration-pink-500">{title}</h1>
             </div>
-            <div className={`section-${title}-timeline flex-1 rs-theme-dark`}>
+            <div className={`rs-theme-dark section-${title}-timeline flex-1`}>
                 <Timeline isItemActive={Timeline.ACTIVE_FIRST}>
                     {timeline.map((item:ItemProps, index:number) => {
                         return <Item title={item.title} subtitle={item.subtitle} date={item.date} description={item.description} />

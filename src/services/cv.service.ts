@@ -58,4 +58,29 @@ const getEducation = () => {
     return [university, vespucci];
 }
 
-export {getWorkExperience, getEducation};
+const getExperience = () => {
+    const KA2 = {
+        title: 'Aastha Ltd.',
+        subtitle: 'Erasmus KA2+',
+        date: '2018-05 | 2018-06',
+        description: `I've been able to take part of the project Erasmus KA2+ in the city of London, United Kingdom. Here I started to fall in love with the whole IT infrastructure, CI/CD pipelines and cloud architecture.`
+    }
+
+    const CopilotPreview = {
+        title: 'Github',
+        subtitle: 'Copilot Preview',
+        date: '2021-01 | 2021-08',
+        description: `I got the pleasure to work with some of the most specialized minds in Artificial Intelligence research, and I was able to take part of the Copilot Preview program as API tester while learning about how the Artificial Intelligence behind it works.`
+    }
+
+    const freelance = {
+        title: 'Freelance',
+        subtitle: 'Full Stack Developer',
+        date: '2019-01 | 2022-03',
+        description: `I've been working as a freelance for many years now, working on many projects, from small websites to big applications. It was a great experience, I learned a lot about how to work with clients and how to manage a project. I'm not working anymore as a freelance, but I'm still working on some personal projects in my free time.`
+    }
+
+    return [freelance, CopilotPreview, KA2];
+}
+
+export {getWorkExperience, getEducation, getExperience};
