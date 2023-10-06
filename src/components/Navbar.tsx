@@ -11,7 +11,7 @@ export default () => {
 
     const navigation = [
         { title: "About", path: "/", color: "text-purple-300"},
-        { title: "Tech Stack", path: "/tech", color: "text-yellow-300"},
+        { title: "CV", path: "/cv", color: "text-yellow-300"},
         { title: "Blog", path: "/blog", color: "text-green-300"},
     ]
 
