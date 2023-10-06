@@ -2,10 +2,17 @@
 
 import { useState } from "react";
 import { useAge } from "../customHooks/useAge";
+import { FaDownload, FaEnvelope, FaPhone } from "react-icons/fa6";
 
-const Header = () => {
+interface HeaderProps {
+  refDownloadCallback: () => void;
+}
+
+const Header = ({ refDownloadCallback}: HeaderProps) => {
   const [picture, setPicture] = useState('https://avatars.githubusercontent.com/u/56323265?v=4');
   const [name, setName] = useState('Gabriele Zigurella');
+  const [phone, setPhone] = useState('+39 331 3129558');
+  const [email, setEmail] = useState('gzigurella99@gmail.com');
   const [description, setDescription] = useState(`I'm a software engineer with a passion for building and maintaining scalable, reliable, and efficient distributed systems. 
   \nI specialize in java microservices and techOps, and I have a proven track record of success in delivering high-quality software. 
   I'm also a strong advocate for open source software and DevOps practices. I believe in the power of collaboration and automation to build better software, faster.`);
@@ -22,21 +29,25 @@ const Header = () => {
         <img src={picture} alt="Profile picture" className="profile-picture rounded-lg min-h-24" />
       </div>
       <div className="header-right text-white">
-        <h1 className="header-name mt-4 mb-2 text-xl font-medium">[DOWNLOAD BUTTON]|[PHONE]|[EMAIL]</h1>
-        <p className="header-description text-slate-200 text-sm">{description}</p>
+        <div className="header-name mt-4 mb-1 text-md font-medium flex flex-1 gap-x-2">
+          <DownloadButton name={name} Callback={refDownloadCallback}/>
+          <div className="flex items-center gap-x-2 text-zinc-400"><FaPhone/> {phone}</div>
+          <div className="flex items-center gap-x-2 text-zinc-400"><FaEnvelope/> {email}</div>
+        </div>
+        <p className="header-description text-zinc-400 text-sm">{description}</p>
         <div className="header-details flex gap-x-10 my-4">
           <div className="header-detail detail-1">
             <ul>
-              <ListItem itemName="Location" itemValue={location} />
-              <ListItem itemName="Nationality" itemValue={nationality} />
-              <ListItem itemName="Spoken Languages" itemValue={spokenLanguages.join(', ')} />
+              <ListItem key="header-location" itemName="Location" itemValue={location} />
+              <ListItem key="header-nationality" itemName="Nationality" itemValue={nationality} />
+              <ListItem key="header-languages" itemName="Spoken Languages" itemValue={spokenLanguages.join(', ')} />
             </ul>
           </div>
           <div className="header-detail detail-2">
             <ul>
-              <ListItem itemName="Age" itemValue={age} />
-              <ListItem itemName="Interests" itemValue={interests.join(', ')} />
-              <ListItem itemName="Current Employment" itemValue={currentEmployment} />
+              <ListItem key="header-age" itemName="Age" itemValue={age} />
+              <ListItem key="header-interests" itemName="Interests" itemValue={interests.join(', ')} />
+              <ListItem key="header-employment" itemName="Current Employment" itemValue={currentEmployment} />
             </ul>
           </div>
         </div>
@@ -48,6 +59,29 @@ const Header = () => {
 interface ListItemProps {
   itemName: string;
   itemValue: string;
+}
+
+interface DownloadButtonProps {
+  name: string;
+  Callback: () => void;
+}
+
+const DownloadButton = ({name, Callback}: DownloadButtonProps) => {
+  const [downloaded, setDownloaded] = useState(false);
+  function handleDownload() {
+    setDownloaded(true);
+    Callback();
+    setInterval(() => {
+      setDownloaded(false);
+    }, 1200);
+  }
+
+  return (
+    <>
+    {downloaded ? (<div className="text-white font-bold text-lg">{name}</div>) : 
+    (<div className="flex items-center gap-x-2 px-5 py-1 border-white border-2 rounded-lg bg-purple-300 hover:bg-sky-400 hover:cursor-pointer" onClick={handleDownload}><FaDownload/> Download CV</div>)}
+    </>
+  );
 }
 
 const ListItem = ({ itemName, itemValue } : ListItemProps) => {
