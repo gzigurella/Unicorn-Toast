@@ -1,3 +1,4 @@
+import "rsuite/dist/rsuite.min.css";
 import Navbar from '@/components/Navbar'
 import '../styles/globals.css'
 import { Inter } from 'next/font/google'

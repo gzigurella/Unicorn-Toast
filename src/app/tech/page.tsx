@@ -10,7 +10,7 @@ const Deck = dynamic(
 import { Suspense } from 'react';
 import Loading from '../loading';
 import Pyramid from '@/components/PyramidStack';
-import { IMAGES, ImageType, CARDS } from '@/services/getTechStack';
+import { IMAGES, ImageType, CARDS } from '@/services/getTechStack.service';
 import { CardProps } from '@/components/Card';
 
 export default function Page() {
