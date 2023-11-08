@@ -55,7 +55,7 @@ export default () => {
                                             flex items-center justify-start w-full hover:cursor-pointer gap-x-1`}>
                                             {item.title === "About" && <FaCircleInfo className='mr-1'/>}
                                             {item.title === "Blog" && <FaPenRuler className='mr-1'/>}
-                                            {item.title === "Tech Stack" && <FaCompassDrafting className='mr-1'/>}
+                                            {item.title === "CV" && <FaCompassDrafting className='mr-1'/>}
                                             <span className='text-md'>{item.title}</span>
                                         </a>
                                     </li>
