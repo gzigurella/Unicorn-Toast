@@ -3,7 +3,7 @@
 import Header from "@/components/cv/CVHeader";
 import Loading from "../loading";
 import AstronautImage from '../../../public/Houston.png'
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useLayoutEffect, useState } from "react";
 import Section from "@/components/cv/CVSection";
 import { getEducation, getExperience, getWorkExperience } from "@/services/cv.service";
 import Footer from "@/components/cv/CVFooter";
@@ -12,6 +12,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import Image from "next/image";
 
 const Page = () => {
+    const [isLoading, setIsLoading] = useState(true);
     const size = useWindowSize();
     const today = new Date();
     const todayStr = today.toISOString().substring(0, 10);
@@ -26,10 +27,15 @@ const Page = () => {
         }
     }, [downloadButtonIsPressed]);
 
+    useLayoutEffect(() => {
+        setIsLoading(false);
+    }, []);
+
 
     return (
-        <Suspense fallback={<Loading />}>
-            { size.width  && <>
+        <>
+            {isLoading && <Loading />}
+            { size.width  && <Suspense fallback={<Loading />}>
                 {
                     size.width < 980 ?  
         
@@ -56,9 +62,9 @@ const Page = () => {
                             <Footer />
                         </div>
                 }
-                </>
+                </Suspense>
             }
-        </Suspense>
+        </>
     );
 }
 

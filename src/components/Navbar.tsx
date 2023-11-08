@@ -11,13 +11,13 @@ export default () => {
 
     const navigation = [
         { title: "About", path: "/", color: "text-purple-300"},
-        { title: "CV", path: "/cv", color: "text-yellow-300"},
-        { title: "Blog", path: "/blog", color: "text-green-300"},
+        { title: "CV", path: "/cv", color: "text-purple-300"},
+        { title: "Blog", path: "/blog", color: "text-purple-300"},
     ]
 
     const socials = [
-        { title: "Github", path: "https://github.com/gzigurella", color: "text-brown-300"},
-        { title: "LinkedIn", path: "https://www.linkedin.com/in/gabrielezigurella?trk=public_profile_browsemap", color: "text-indigo-400"},
+        { title: "Github", path: "https://github.com/gzigurella", color: "text-purple-300"},
+        { title: "LinkedIn", path: "https://www.linkedin.com/in/gabrielezigurella?trk=public_profile_browsemap", color: "text-purple-300"},
         //{ title: "Mastodoon" path: "", color: "text-cyan-300"},
     ]
 
