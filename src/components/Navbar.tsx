@@ -45,7 +45,7 @@ export default () => {
                     </div>
                 </div>
                 <div className={`flex flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${showMenu ? 'block' : 'hidden'}`}>
-                    <ul className="items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+                    <ul className="items-center justify-end space-y-6 md:flex md:space-x-6 md:space-y-0">
                         <div className='space-y-3 gap-x-6 md:flex md:space-y-0'>
                         {
                             navigation.map((item, idx) => {

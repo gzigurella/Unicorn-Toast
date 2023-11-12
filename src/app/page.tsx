@@ -92,7 +92,7 @@ export default function Page() {
           <Template name="Gabriele" surname="Zigurella" job="Software Engineer"
           hobby="Cloud & User Experience" />
           <div className='my-10'/>
-          <div className='space-y-3'>
+          <div className='space-y-3 mb-5'>
             <List techs={techStack} title={techTitle}/>
             <List techs={cloudStack} title={cloudTitle}/>
             <List techs={hobbyStack} title={hobbyTitle}/>
