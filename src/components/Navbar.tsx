@@ -22,7 +22,7 @@ export default () => {
     ]
 
     return (
-        <nav className="bg-zinc-600 md:bg-transparent border-b w-full md:static md:text-sm md:border-none">
+        <nav className="bg-transparent border-b w-full md:static md:text-sm md:border-none">
             <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <Logo />
@@ -44,9 +44,9 @@ export default () => {
                         </button>
                     </div>
                 </div>
-                <div className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${showMenu ? 'block' : 'hidden'}`}>
-                    <ul className="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-                        <div className='space-y-3 items-center gap-x-6 md:flex md:space-y-0'>
+                <div className={`flex justify-end flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${showMenu ? 'block' : 'hidden'}`}>
+                    <ul className="items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+                        <div className='space-y-3 gap-x-6 md:flex md:space-y-0'>
                         {
                             navigation.map((item, idx) => {
                                 return (
