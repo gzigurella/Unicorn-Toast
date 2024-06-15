@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Gabriele Zigurella',
-  description: 'Personal Website | Hosted on Vercel',
+  description: 'Personal Website | Quantum Software Engineer & DevOps',
 }
 
 export default function RootLayout({

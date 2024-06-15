@@ -1,7 +1,6 @@
 import '../styles/loading.css'
 
 export default function Loading() {
-    // You can add any UI inside Loading, including a Skeleton.
     return  (
         <div className='flex items-center justify-center min-h-screen min-w-screen h-screen w-screen'>
             <div className="lds-grid">
