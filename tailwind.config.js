@@ -5,7 +5,6 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'media', // or 'class'
   theme: {
     accentColor: ({ theme }) => ({
       ...theme('colors'),
@@ -1003,5 +1002,6 @@ module.exports = {
       50: '50',
     },
   },
-  plugins: [],
+  darkMode: "media",
+  plugins: []
 }

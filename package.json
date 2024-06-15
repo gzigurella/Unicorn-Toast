@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.0.4",
+    "@mdx-js/mdx": "^3.0.1",
     "@react-spring/web": "^9.7.3",
     "@types/node": "20.3.1",
     "@types/react": "18.2.13",
@@ -29,7 +31,7 @@
     "react-to-pdf": "^1.0.1",
     "rsuite": "^5.40.0",
     "styled-components": "6.0.0-rc.5",
-    "tailwindcss": "3.3.2",
+    "tailwindcss": "3.4.0",
     "typescript": "5.1.3",
     "typewriter-effect": "^2.21.0",
     "usehooks-ts": "^2.9.1"

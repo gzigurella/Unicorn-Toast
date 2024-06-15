@@ -1,12 +1,16 @@
 import "rsuite/dist/rsuite.min.css";
 import Navbar from '@/components/Navbar'
 import '../styles/globals.css'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { Suspense } from 'react'
 import Loading from './loading'
 
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat'
+})
 
 export const metadata = {
   title: 'Gabriele Zigurella',
@@ -20,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`min-h-screen min-w-screen h-screen w-screen ${inter.className}`}>
+      <body className={`min-h-screen min-w-screen h-screen w-screen ${montserrat.className} bg-slate-100`}>
         <Suspense fallback={<Loading />}>
         <Navbar />
         <main className="mt-14">

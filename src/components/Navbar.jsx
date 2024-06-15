@@ -1,6 +1,6 @@
 'use client';
 
-import Logo from './ZiguLogo';
+import Logo from './Logo';
 import { usePathname } from 'next/navigation';
 import { FaLinkedin } from 'react-icons/fa6';
 
@@ -20,7 +20,7 @@ export default () => {
             <div className='flex flex-1 flex-row justify-between items-center mx-10'>
             <Logo />
             <ul className='flex flex-row items-center gap-x-2.5 mr-2'>
-                {navigation.map((navItem) => <li className='items-center'><a className={`font-light hover:font-medium hover:${navItem.color}`} href={navItem.path}>{navItem.title}</a></li>)}
+                {navigation.map((navItem) => <li key={`nav_${navItem.title}`} className='items-center'><a className={`font-light hover:font-medium hover:${navItem.color}`} href={navItem.path}>{navItem.title}</a></li>)}
                 <a href={CTA.path} className='hover:no-underline'>
                     <button className='flex items-center gap-x-1 grow bg-gray-800 text-slate-100 px-3 py-2 rounded-full hover:bg-blue-500 hover:shadow-md hover:shadow-blue-500/50'>
                         <FaLinkedin size={18}/><span className='font-semibold'>{CTA.title}</span>
