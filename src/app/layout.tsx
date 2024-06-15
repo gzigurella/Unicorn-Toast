@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={`min-h-screen min-w-screen h-screen w-screen ${inter.className}`}>
         <Suspense fallback={<Loading />}>
         <Navbar />
-        <main>
+        <main className="mt-14">
           {children}
         </main>
         </Suspense>

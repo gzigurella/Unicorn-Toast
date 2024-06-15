@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-// Colors
-$bg-color: whitesmoke;
-
 body {
-	background-color: $bg-color;
+	background-color: rgb(241 245 249 /1);
 }
