@@ -12,12 +12,12 @@ export default function Page() {
                     <Fa0 /> Papers that inspired our work
                 </div>
                 <div className='text-base font-light'>
-                    <p>Two papers inspired our work at QuantumX.<br />
-                        <ol className='ml-4'>
+                    <div>Two papers inspired our work at QuantumX.<br />
+                        <ul className='ml-4'>
                             <li><a href="https://arxiv.org/pdf/2212.06691" className='text-purple-500 hover:text-purple-500 hover:font-semibold underline'>1. Quantum Clustering with k-Means: a Hybrid Approach</a></li>
                             <li><a href="https://arxiv.org/pdf/2007.00280" className='text-purple-500 hover:text-purple-500 hover:font-semibold underline'>2. Quantum Spectral Clustering</a></li>
-                        </ol>
-                    </p>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div>
