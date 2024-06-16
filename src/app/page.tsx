@@ -3,9 +3,10 @@
 import QuantumHero from '../../public/QuantumHero.png'
 import Image from 'next/image';
 import { Montserrat } from 'next/font/google';
-import Typewriter from 'typewriter-effect';
-import ProjectCard from '@/components/ProjectCard'
-import About from '@/components/About'
+import ProjectCard from '../components/ProjectCard'
+import About from '../components/About'
+import Footer from '../components/Footer'
+import Hero from '../components/Hero'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -14,22 +15,9 @@ const montserrat = Montserrat({
 })
 
 export default function Page() {
-  const words = ['“The disruptive potential of <b>quantum technology</b> will make the change of<br/>the Internet era look like a small bump in the road!” - <i>Kevin Coleman</i>'];
-
   return (
     <div className="flex flex-col items-center content-start min-h-screen min-w-screen h-screen w-screen text-gray-800">
-      <div>
-        <span className={`text-7xl font-bold ${montserrat.variable}`}>Delivering the future...</span>
-        <div id="typewriter-hero" className={`md:ml-10 mt-3 flex text-xl h-6 font-light text-center text-gray-600 ${montserrat.variable}`}>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter.changeDelay(50).typeString(words[0]).start().pauseFor(Number.MAX_SAFE_INTEGER);
-            }}
-
-            options={{ cursor: "" }}
-          />
-        </div>
-      </div>
+      <Hero />
       <div id="quantum" className='mx-2 mt-24'>
         <div className='relative z-0'>
           <Image width={1280} className='rounded-3xl relative z-0' src={QuantumHero} alt='Landing page Image of a Quantum Computer, Image generated with a Diffusion Stabilizer' />
@@ -59,6 +47,7 @@ export default function Page() {
         </div>
       </div>
       <About />
+      <Footer />
     </div>
   )
 }
