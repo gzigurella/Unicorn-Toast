@@ -5,7 +5,7 @@ export default function ZiguLogo() {
 
     return (
         <div className="self-start">
-            <a className="mr-auto gap-3 flex items-center hover:no-underline hover:text-black" href='/'>
+            <a className="mr-auto gap-3 flex items-center hover:no-underline hover:text-black visited:text-black" href='/'>
                 <div className='hidden md:block'>
                     <Image priority={true} src={Logo} alt={"Site Logo"} width={64} />
                 </div>

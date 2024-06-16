@@ -1,5 +1,5 @@
 import "rsuite/dist/rsuite.min.css";
-import Navbar from '@/components/Navbar'
+import Navbar from '../components/Navbar'
 import '../styles/globals.css'
 import { Montserrat } from 'next/font/google'
 import { Suspense } from 'react'
@@ -25,8 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`min-h-screen min-w-screen h-screen w-screen ${montserrat.className} bg-slate-100`}>
-        <Suspense fallback={<Loading />}>
         <Navbar />
+        <Suspense fallback={<Loading />}>
         <main className="mt-14">
           {children}
         </main>

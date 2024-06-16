@@ -42,13 +42,12 @@ export default function () {
                             Work Experience & Current Position
                         </div>
                         <a href="/zigurella_gabriele_cv.pdf" className='hover:no-underline hover:text-white' target='_blank'>
-                        <button class="flex gap-x-2 bg-red-500 text-white lg:bg-transparent hover:bg-red-500 lg:text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded-3xl">
+                        <button className="flex gap-x-2 bg-red-500 text-white lg:bg-transparent hover:bg-red-500 lg:text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded-3xl">
                             <FaDownload size={16} />Download CV
                         </button>
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     );
