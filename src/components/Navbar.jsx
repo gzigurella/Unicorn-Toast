@@ -19,11 +19,11 @@ export default () => {
         <nav className="bg-transparent mt-6 w-full md:static md:text-sm md:border-none">
             <div className='flex flex-1 flex-row justify-between items-center mx-10'>
             <Logo />
-            <ul className='flex flex-row items-center gap-x-2.5 mr-2'>
-                {navigation.map((navItem) => <li key={`nav_${navItem.title}`} className='items-center'><a className={`font-light hover:font-medium hover:${navItem.color}`} href={navItem.path}>{navItem.title}</a></li>)}
+            <ul className='flex flex-row items-center gap-x-4 md:gap-x-2.5 mr-2'>
+                {navigation.map((navItem) => <li key={`nav_${navItem.title}`} className='items-center'><a className={`font-base md:font-light hover:font-medium hover:${navItem.color}`} href={navItem.path}>{navItem.title}</a></li>)}
                 <a href={CTA.path} className='hover:no-underline'>
-                    <button className='flex items-center gap-x-1 grow bg-gray-800 text-slate-100 px-3 py-2 rounded-full hover:bg-blue-500 hover:shadow-md hover:shadow-blue-500/50'>
-                        <FaLinkedin size={18}/><span className='font-semibold'>{CTA.title}</span>
+                    <button className='flex items-center gap-x-1 grow bg-blue-500 lg:bg-gray-800 text-slate-100 px-3 py-2 rounded-xl md:rounded-full hover:bg-blue-500 hover:shadow-md hover:shadow-blue-500/50'>
+                        <FaLinkedin size={18}/><span className='hidden md:block font-semibold'>{CTA.title}</span>
                     </button>
                 </a>
             </ul>

@@ -2,17 +2,17 @@ import { FaDownload } from 'react-icons/fa6';
 
 export default function () {
     return (
-        <div id="about" className='mt-10 flex justify-between gap-x-20 px-20'>
+        <div id="about" className='mt-10 flex justify-between gap-x-20 px-2 lg:px-20'>
             <div id="about-paragraph" className='flex flex-col'>
-                <div className='font-semibold text-7xl'>
+                <div className='font-semibold text-3xl md:text-5xl lg:text-7xl'>
                     About me
                 </div>
                 <div className='flex flex-col gap-y-4'>
                     <div>
-                        <div className='text-gray-400 font-normal text-lg'>
+                        <div className='text-gray-400 font-normal text-md md:text-lg lg:text-lg'>
                             Description
                         </div>
-                        <div className='font-light text-wrap text-base'>
+                        <div className='font-light text-wrap text-sm lg:text-base'>
                             <p>
                                 <span className="italic">Raaawwrrr I'm a 🦖 dinosaur from Italy!</span><br />
                                 I've been developing kinda my whole life, introduced to the sector by my elder brother at the age of 14 making it a whooping over 10 years of development!<br />
@@ -24,10 +24,10 @@ export default function () {
                         </div>
                     </div>
                     <div>
-                        <div className='text-gray-400 font-normal text-lg'>
+                        <div className='text-gray-400 font-normal text-md md:text-lg lg:text-lg'>
                             Training
                         </div>
-                        <div className='font-light text-wrap text-base'>
+                        <div className='font-light text-wrap text-sm lg:text-base'>
                             <p>
                                 During high school I've studied <span className='font-normal'>SQL, PHP along HTML and CSS</span>. This has been a small milestone towards what I do today.<br/>
                                 Near the end of High School I've had my first proper work experience in a team, in London (UK) where I learned valuable lessons about coworking I still treasure to these days.<br/>
@@ -38,11 +38,11 @@ export default function () {
                         </div>
                     </div>
                     <div>
-                        <div className='text-gray-400 font-normal text-lg'>
+                        <div className='text-gray-400 font-normal text-md md:text-lg lg:text-lg'>
                             Work Experience & Current Position
                         </div>
                         <a href="/zigurella_gabriele_cv.pdf" className='hover:no-underline hover:text-white' target='_blank'>
-                        <button class="flex gap-x-2 bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded-3xl">
+                        <button class="flex gap-x-2 bg-red-500 text-white lg:bg-transparent hover:bg-red-500 lg:text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded-3xl">
                             <FaDownload size={16} />Download CV
                         </button>
                         </a>
