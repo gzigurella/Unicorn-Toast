@@ -5,11 +5,11 @@ import {FaHouseChimney} from 'react-icons/fa6'
 
 export default function NotFound() {
   return (
-    <div className='flex flex-col items-center min-w-screen min-h-screen text-slate-100 mt-10'>
+    <div className='flex flex-col items-center min-w-screen min-h-screen text-gray-400 mt-10'>
         <div className='flex gap-6'>
             <div className='text-2xl font-semibold'>Could not find requested resource</div>
             <Link href="/">
-                <div className='hover:cursor-pointer border-slate-100 rounded-lg bg-purple-200 text-black py-2 px-4 border-s-2 flex items-center gap-1'>
+                <div className='hover:cursor-pointer border-purple-700 rounded-lg bg-purple-400 text-black py-2 px-4 border-s-[4px] hover:no-underline hover:border-s-0 flex items-center gap-1'>
                     <FaHouseChimney/> Take me back
                 </div>
             </Link>

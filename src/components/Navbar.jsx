@@ -21,9 +21,9 @@ export default () => {
             <Logo />
             <ul className='flex flex-row items-center gap-x-4 md:gap-x-2.5 mr-2'>
                 {navigation.map((navItem) => <li key={`nav_${navItem.title}`} className='items-center'><a className={`font-base md:font-light hover:font-medium hover:${navItem.color}`} href={navItem.path}>{navItem.title}</a></li>)}
-                <a href={CTA.path} className='hover:no-underline'>
+                <a href={CTA.path} className='hover:no-underline group'>
                     <button className='flex items-center gap-x-1 grow bg-blue-500 lg:bg-gray-800 text-slate-100 px-3 py-2 rounded-xl md:rounded-full hover:bg-blue-500 hover:shadow-md hover:shadow-blue-500/50'>
-                        <FaLinkedin size={18}/><span className='hidden md:block font-semibold'>{CTA.title}</span>
+                        <FaLinkedin size={18}/><span className='hidden md:block font-semibold group-hover:font-bold'>{CTA.title}</span>
                     </button>
                 </a>
             </ul>
