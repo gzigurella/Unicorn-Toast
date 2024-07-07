@@ -1,4 +1,3 @@
-import "rsuite/dist/rsuite.min.css";
 import Navbar from '../components/Navbar'
 import '../styles/globals.css'
 import { Montserrat } from 'next/font/google'
@@ -24,6 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      </head>
       <body className={`min-h-screen min-w-screen h-screen w-screen ${montserrat.className} bg-slate-100`}>
         <Navbar />
         <Suspense fallback={<Loading />}>

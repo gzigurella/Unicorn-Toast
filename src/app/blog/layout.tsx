@@ -1,4 +1,3 @@
-import "rsuite/dist/rsuite.min.css";
 import { Montserrat } from 'next/font/google'
 
 

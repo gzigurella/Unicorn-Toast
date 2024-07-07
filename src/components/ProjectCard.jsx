@@ -1,19 +1,26 @@
-
-export default function ({ title, link }) {
+export default function ({ title, description, link, icon }) {
     return (
-        <a href={link} className="group hover:no-underline hover:cursor-pointer">
-            <div className="w-80 md:w-96">
-                <div className="h-auto flex-none bg-cover text-left overflow-hidden bg-white rounded-3xl group-hover:drop-shadow-2xl" title={title}>
-                    <div className="p-4 justify-between leading-normal">
-                        <div className="md:mb-2 md:mt-2">
-                            <p className="text-gray-700 text-sm md:text-base font-light group-hover:font-semibold">{title}</p>
-                            <div className="font-semibold underline pt-2 lg:hidden">
-                                Tap to read more
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
+        <div
+            className="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]"
+        >
+            <a href={link} className="group-hover:no-underline group-hover:cursor-pointer">
+                <span className="text-5xl h-12 w-12 text-gray-800 group-hover:text-gray-400">
+                    {icon ?? icon}
+                </span>
+                <p className="font-bold text-2xl group-hover:text-white text-black/80">
+                    {title}
+                </p>
+                <p className="text-gray-400 text-sm">
+                    {description}
+                </p>
+                <p
+                    style={{ "WebkitTextStroke": "1px gray", "WebkitTextFillColor": "transparent" }}
+                    className="text-2xl font-bold self-end"
+                >
+                    Read more
+                </p>
+            </a>
+        </div>
+
     );
 }
