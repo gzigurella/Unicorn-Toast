@@ -10,7 +10,7 @@ const montserrat = Montserrat({
   })
 
 export default () => {
-    return (<div id="quantum" className='hidden md:block lg:mx-2 mt-24'>
+    return (<div id="quantum" className='hidden md:block lg:mx-2 mt-10'>
         <div className='relative z-0'>
           <Image className='lg:rounded-3xl relative z-0' src={QuantumHero} alt='Landing page Image of a Quantum Computer, Image generated with a Diffusion Stabilizer' />
           <div className='animate__animated animate__fadeInLeftBig absolute group flex flex-row items-center gap-x-4 pr-4 pl-11 py-3 justify-center top-[140px] -left-10 z-10 bg-slate-100 rounded-3xl hover:cursor-pointer'>

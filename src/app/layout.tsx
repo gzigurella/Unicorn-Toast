@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Header'
 import '../styles/globals.css'
 import { Montserrat } from 'next/font/google'
 import { Suspense } from 'react'
