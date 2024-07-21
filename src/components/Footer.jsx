@@ -7,7 +7,7 @@ export default function () {
                 <div className='text-md'>
                     <div>Personal Website made with Next.js</div>
                     <div className='flex gap-x-2 mt-1'>
-                        <FaGithub size={20} /> <span>Souce code available <a href="https://github.com/gzigurella/Unicorn-Toast">here</a></span>
+                        <FaGithub size={20} /> <span>Souce code available <a href="https://github.com/gzigurella/Unicorn-Toast" className={'hover:text-purple-400 hover:cursor-pointer no-underline font-medium hover:font-semibold hover:underline'}>here</a></span>
                     </div>
                 </div>
             </div>

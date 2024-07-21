@@ -1,0 +1,114 @@
+[
+  {
+    "name": "QuantumX",
+    "description": "Leading the research about Quantum Machine Learning and Financial Quantum Applications",
+    "icon":  "/QuantumXLogo.jpg",
+    "alt": "QuantumX Logo",
+    "skillNames": ["Python"]
+  },
+  {
+    "name": "Mastercard TIP",
+    "description": "Setting up the whole cloud environment of the TIP project from Mastercard on Google Cloud.",
+    "icon":  "/MastercardLogo.svg",
+    "alt": "Mastercard Logo",
+    "skillNames": []
+  },
+  {
+    "name": "Regione Sicilia",
+    "description": "IT Consultancy, back-end development and fixes with Java 7. DevOps work to migrate the portal to PSN.",
+    "icon":  "/RegioneSiciliaFlag.svg",
+    "alt": "Regione Sicilia",
+    "skillNames": []
+  },
+  {
+    "name": "Senato",
+    "description": "Back-end development of the portal of the senate of the italian republic, developed with Liferay and Java EE",
+    "icon":  "/SenatoItalianoLogo.svg",
+    "alt": "Italian Senate Symbol",
+    "skillNames": []
+  },
+  {
+    "name": "Capitanerie",
+    "description": "Leading the back-end development of the italian Port Authorities public portal, developed with Liferay, Java EE and React.js",
+    "icon":  "/CdPLogo.svg",
+    "alt": "Italy Port Authorities",
+    "skillNames": []
+  },
+  {
+    "name": "PSN",
+    "description": "Leading the back-end development of the italian IT Authority portal, developed with Liferay and Java EE",
+    "icon":  "/PSNLogo.svg",
+    "alt": "PSN Logo",
+    "skillNames": []
+  },
+  {
+    "name": "Regione Veneto",
+    "description": "Full stack development of the regional portal with Liferay, Java EE and FreeMarker Templating",
+    "icon":  "/RegioneVenetoLogo.jpg",
+    "alt": "Regione Veneto Symbol",
+    "skillNames": []
+  },
+  {
+    "name": "AXA",
+    "description": "Disentangling spaghetti code, a DevOps guide to quality assurance and painful data migrations",
+    "icon":  "/AxaLogo.svg",
+    "alt": "AXA Logo",
+    "skillNames": []
+  },
+  {
+    "name": "Lambda",
+    "description": "The pythonic replacement for GNU AWK, embrace Lambda functions on the CLI",
+    "icon":  "/PythonLogo.svg",
+    "alt": "Python Logo",
+    "skillNames": ["Python"]
+  },
+  {
+    "name": "Mediolanum",
+    "description": "Migrating Java EE compliant legacy code after 12 years, from Java 6 to 11.",
+    "icon":  "/MediolanumLogo.jpeg",
+    "alt": "Mediolanum Logo",
+    "skillNames": []
+  },
+  {
+    "name": "BKN301",
+    "description": "Safe transactions across the world, setting up the custom blockchain of BKN301",
+    "icon":  "/BKN301Logo.jpeg",
+    "alt": "BKN301 Logo",
+    "skillNames": []
+  },
+  {
+    "name": "Spiagge.it",
+    "description": "REST service to retrieve data from BigQuery and CyberSec approach against SQLInjection",
+    "icon":  "/SpiaggeLogo.jpg",
+    "alt": "Spiagge.it Logo",
+    "skillNames": []
+  },
+  {
+    "name": "Azimut/FAST",
+    "description": "Installation of the AllFounds' Fast Blockchain for Azimut. Case study of connecting two Cloud vendors environments.",
+    "icon":  "/Ethereum_logo.svg",
+    "alt": "FAST Blockchain Coin Logo",
+    "skillNames": []
+  },
+  {
+    "name": "Azimut/Reports",
+    "description": "Tools for generating financial reports and elaborate billions of rows per second.",
+    "icon":  "/bigquery.svg",
+    "alt": "Google BigQuery Logo",
+    "skillNames": []
+  },
+  {
+    "name": "Azimut/NAV Engine",
+    "description": "REST service for financial consultants to keep track of up-to-date NAV values, developed with Quarkus and Liferay.",
+    "icon":  "/QuarkusLogo.svg",
+    "alt": "Quarkus Logo",
+    "skillNames": []
+  },
+  {
+    "name": "Azimut/Chatbot",
+    "description": "Intranet integration with Google's Dialogflow CX. A work developed along with Google as partner.",
+    "icon":  "/dialogflow_cx.svg",
+    "alt": "Dialogflow CX Logo",
+    "skillNames": []
+  }
+]

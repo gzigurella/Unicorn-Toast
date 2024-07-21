@@ -62,6 +62,9 @@ dependencies:
   react-icons:
     specifier: ^4.10.1
     version: 4.12.0(react@18.2.0)
+  react-responsive-modal:
+    specifier: ^6.4.2
+    version: 6.4.2(react-dom@18.2.0)(react@18.2.0)
   react-tinder-card:
     specifier: ^1.6.2
     version: 1.6.4(@react-spring/web@9.7.3)(react@18.2.0)
@@ -1514,6 +1517,23 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
+  /@bedrock-layout/use-forwarded-ref@1.6.1(react@18.2.0):
+    resolution: {integrity: sha512-GD9A9AFLzFNjr7k6fgerSqxfwDWl+wsPS11PErOKe1zkVz0y7RGC9gzlOiX/JrgpyB3NFHWIuGtoOQqifJQQpw==}
+    peerDependencies:
+      react: ^16.8 || ^17 || ^18
+    dependencies:
+      '@bedrock-layout/use-stateful-ref': 1.4.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@bedrock-layout/use-stateful-ref@1.4.1(react@18.2.0):
+    resolution: {integrity: sha512-4eKO2KdQEXcR5LI4QcxqlJykJUDQJWDeWYAukIn6sRQYoabcfI5kDl61PUi6FR6o8VFgQ8IEP7HleKqWlSe8SQ==}
+    peerDependencies:
+      react: ^16.8 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /@emotion/is-prop-valid@0.7.3:
     resolution: {integrity: sha512-uxJqm/sqwXw3YPA5GXX365OBcJGFtxUVkB6WyezqFHlNe9jqUWH5ur2O2M8dGBz61kn1g3ZBlzUunFQXQIClhA==}
     dependencies:
@@ -2481,6 +2501,10 @@ packages:
   /binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
+    dev: false
+
+  /body-scroll-lock@3.1.5:
+    resolution: {integrity: sha512-Yi1Xaml0EvNA0OYWxXiYNqY24AfWkbA6w5vxE7GWxtKfzIbZM+Qw+aSmkgsbWzbHiy/RCSkUZBplVxTA+E4jJg==}
     dev: false
 
   /brace-expansion@1.1.11:
@@ -5273,6 +5297,19 @@ packages:
       shallow-equal: 1.2.1
       theming: 3.3.0(react@18.2.0)
       tiny-warning: 1.0.3
+    dev: false
+
+  /react-responsive-modal@6.4.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-ARjGEKE5Gu5CSvyA8U9ARVbtK4SMAtdXsjtzwtxRlQIHC99RQTnOUctLpl7+/sp1Kg1OJZ6yqvp6ivd4TBueEw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18
+      react-dom: ^16.8.0 || ^17 || ^18
+    dependencies:
+      '@bedrock-layout/use-forwarded-ref': 1.6.1(react@18.2.0)
+      body-scroll-lock: 3.1.5
+      classnames: 2.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react-tinder-card@1.6.4(@react-spring/web@9.7.3)(react@18.2.0):

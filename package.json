@@ -28,6 +28,7 @@
     "react-confetti-explosion": "^2.1.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
+    "react-responsive-modal": "^6.4.2",
     "react-tinder-card": "^1.6.2",
     "react-to-pdf": "^1.0.1",
     "rsuite": "^5.65.1",

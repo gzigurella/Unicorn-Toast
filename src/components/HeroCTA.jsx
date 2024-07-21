@@ -27,11 +27,15 @@ const CVButton = ({link}) => {
 export default function () {
     return (
         <div id="about" className='mt-10 mx-[240px]'>
-            <div id="about-paragraph" className='flex gap-x-4 items-center '>
-                <div className='font-semibold text-3xl md:text-5xl lg:text-7xl'>
+            <div className={'font-semibold text-3xl md:text-5xl lg:text-7xl'}>
+                <div>I'm <span className={'text-purple-400'}>Gabriele Zigurella</span></div>
+                <div>DevOps & Software Engineer</div>
+            </div>
+            <div id="about-paragraph" className='flex gap-x-4 items-center mt-4'>
+                <div className='font-medium text-3xl md:text-4xl lg:text-5xl'>
                     Am I a good fit for your <span className="text-purple-400">work</span>?
                 </div>
-                <CVButton link={"/zigurella_gabriele_cv.pdf"} />
+                <CVButton link={"/zigurella_gabriele_cv.pdf"}/>
             </div>
         </div>
     );

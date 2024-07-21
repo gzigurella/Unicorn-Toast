@@ -9,9 +9,6 @@ export default function ZiguLogo() {
                 <div className='hidden md:block'>
                     <Image priority={true} src={Logo} alt={"Site Logo"} width={64} />
                 </div>
-                <div className='hidden md:block'>
-                    <span className='text-xl ml-[-20px]'>Gabriele Zigurella</span>
-                </div>
             </a>
         </div>
     );
