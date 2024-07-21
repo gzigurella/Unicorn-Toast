@@ -38,7 +38,7 @@ export default ({projects}) => {
            <Loading/>
         }
         {!isLoading &&
-            <div id="projects" className='mt-10 ml-[240px] max-w-screen'>
+            <div id="projects" className='mt-10 ml-[40px] md:ml-[240px] max-w-screen'>
                         <div className='font-medium text-gray-600 text-xl md:text-2xl lg:text-3xl'>Projects</div>
                         <div className="flex flex-col md:flex-wrap md:flex-row justify-start mt-4 gap-x-2 gap-y-4">
                             {projects && projects.length > 0 &&

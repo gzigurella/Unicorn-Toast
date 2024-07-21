@@ -2,7 +2,7 @@
   {
     "name": "QuantumX",
     "shortDescription": "Leading the research about Quantum Machine Learning and Financial Quantum Applications",
-    "description": "During the research <a class='hover:text-purple-400 font-medium hover:font-semibold' href=\"https://quantumx.it/\" target=\"_blank\">@QuantumX</a> we developed Quantum Algorithms based on classic machine learning algorithms targeting estimation of the risk of debt insolvency through CVaR and Altman's Z-Score.",
+    "description": "During the research at <a class='hover:text-purple-400 font-medium hover:font-semibold' href=\"https://quantumx.it/\" target=\"_blank\">QuantumX</a> we developed Quantum Algorithms based on classic machine learning algorithms targeting estimation of the risk of debt insolvency through CVaR and Altman's Z-Score.",
     "icon":  "/QuantumXLogo.jpg",
     "alt": "QuantumX Logo",
     "skillNames": ["Python", "Qiskit"]
@@ -14,6 +14,30 @@
     "icon":  "/MastercardLogo.svg",
     "alt": "Mastercard Logo",
     "skillNames": ["PostgreSQL", "Cloud Build", "Cloud Functions", "Cloud SQL", "Compute Engine", "Cloud Storage", "Cloud Scheduler"]
+  },
+  {
+    "name": "Azimut/Chatbot",
+    "shortDescription": "Intranet integration with Google's Dialogflow CX. A work developed along with Google as partner.",
+    "description": "Development of an autonomous agent capable of supporting Azimut's Agents on the company intranet, allowing to search across documents. Currently under research with Google to move functionalities upon google's Vertex AI.",
+    "icon":  "/dialogflow_cx.svg",
+    "alt": "Dialogflow CX Logo",
+    "skillNames": ["Dialogflow CX", "Liferay", "Java", "Apache Tomcat", "Compute Engine", "Cloud SQL", "Cloud Storage", "Cloud Run"]
+  },
+  {
+    "name": "AXA",
+    "shortDescription": "Development of AXA public site with Liferay and Maintenance operations through RedHat's OpenShift.",
+    "description": "Development of <a class='hover:text-purple-400 font-medium hover:font-semibold' href=\"https://axa.it/\" target=\"_blank\">AXA's public site</a> with Liferay and Maintenance operations through RedHat's OpenShift.<br/> Configured infrastructure pipeline for Continuous Integration, Continuous Testing and Continuous Development with Jenkins.<br/>Developed with <a class='hover:text-purple-400 font-medium hover:font-semibold' target=\"_blank\" href=\"https://www.smc.it/homepage\">SMC</a>.",
+    "icon":  "/AxaLogo.svg",
+    "alt": "AXA Logo",
+    "skillNames": ["PostgreSQL", "Liferay", "Java", "Elasticsearch", "Apache Tomcat", "OpenShift", "BASH", "Jenkins"]
+  },
+  {
+    "name": "Capitanerie",
+    "shortDescription": "Leading the back-end development of the italian Port Authorities public portal, developed with Liferay, Java EE and React.js",
+    "description": "Development of Liferay Portal customization for the Italian Port Authorities, developed with Java 11 EE and Elasticsearch for the Back-end and React.js bundled with rollup and injected with JSPWriter for the front-end.",
+    "icon":  "/CdPLogo.svg",
+    "alt": "Italy Port Authorities",
+    "skillNames": ["PostgreSQL", "Liferay", "Java", "Elasticsearch", "Apache Tomcat", "Compute Engine", "React.js"]
   },
   {
     "name": "Regione Sicilia",
@@ -32,88 +56,75 @@
     "skillNames": ["PostgreSQL", "Liferay", "Java", "Apache Tomcat", "Compute Engine"]
   },
   {
-    "name": "Capitanerie",
-    "shortDescription": "Leading the back-end development of the italian Port Authorities public portal, developed with Liferay, Java EE and React.js",
-    "description": "Development of Liferay Portal customization Italian Port Authorities, developed with Java 11 EE and Elasticsearch for the Back-end and React.js bundled with rollup and injected with JSPWriter for the front-end.",
-    "icon":  "/CdPLogo.svg",
-    "alt": "Italy Port Authorities",
-    "skillNames": ["PostgreSQL", "Liferay", "Java", "Elasticsearch", "Apache Tomcat", "Compute Engine", "React.js"]
-  },
-  {
     "name": "PSN",
     "shortDescription": "Leading the back-end development of the italian IT Authority portal, developed with Liferay and Java EE",
+    "description": "Coordinating the development of the Liferay Portal for the Italian IT Authority, the website will be used to handle the government organizations intranet and services developed with Java 11 EE for the back-end.",
     "icon":  "/PSNLogo.svg",
     "alt": "PSN Logo",
-    "skillNames": []
+    "skillNames": ["PostgreSQL", "Liferay", "Java", "Compute Engine"]
   },
   {
     "name": "Regione Veneto",
     "shortDescription": "Full stack development of the regional portal with Liferay, Java EE and FreeMarker Templating",
+    "description": "Development of Liferay customization for the Venetian Regional Portal, developed with Java 8 EE and Elasticsearch for the Back-end and FreeMarker Template with JSPs for the front-end.",
     "icon":  "/RegioneVenetoLogo.jpg",
     "alt": "Regione Veneto Symbol",
-    "skillNames": []
-  },
-  {
-    "name": "AXA",
-    "shortDescription": "Disentangling spaghetti code, a DevOps guide to quality assurance and painful data migrations",
-    "icon":  "/AxaLogo.svg",
-    "alt": "AXA Logo",
-    "skillNames": []
+    "skillNames": ["PostgreSQL", "Liferay", "Java", "Elasticsearch", "Apache Tomcat"]
   },
   {
     "name": "Lambda",
     "shortDescription": "The pythonic replacement for GNU AWK, embrace Lambda functions on the CLI",
+    "description": "Development of a functional tool to embed python inside my own shell at home. The idea is to provide the full extensibility of Python while allowing a syntax that's easy to operate from the shell.",
     "icon":  "/PythonLogo.svg",
     "alt": "Python Logo",
-    "skillNames": ["Python"]
+    "skillNames": ["Python", "BASH"]
   },
   {
     "name": "Mediolanum",
     "shortDescription": "Migrating Java EE compliant legacy code after 12 years, from Java 6 to 11.",
+    "description": "Migration of codebase from Java 6 to 11, optimization of SOAP and RESTful services with asynchronous queues. Various BugFixes and installation of QA infrastructure based on SonarQube with custom plugin developed for Liferay.<br/>Developed with <a class='hover:text-purple-400 font-medium hover:font-semibold' target=\"_blank\" href=\"https://www.smc.it/homepage\">SMC</a>.",
     "icon":  "/MediolanumLogo.jpeg",
     "alt": "Mediolanum Logo",
-    "skillNames": []
+    "skillNames": ["PostgreSQL", "Liferay", "Java", "Elasticsearch", "Apache Tomcat"]
   },
   {
     "name": "BKN301",
     "shortDescription": "Safe transactions across the world, setting up the custom blockchain of BKN301",
+    "description": "Installation of the infrastructure on Google Cloud for the fork of the Stellar Blockchain used from <a class='hover:text-purple-400 font-medium hover:font-semibold' href=\"https://bkn301.com/\" target=\"_blank\">BKN301</a>. Development of a custom liveness checker for the Stellar blockchain forked by BKN301.",
     "icon":  "/BKN301Logo.jpeg",
     "alt": "BKN301 Logo",
-    "skillNames": []
+    "skillNames": ["Cloud Run", "Cloud SQL", "Cloud Storage", "Artifact Registry", "Python"]
   },
   {
     "name": "Spiagge.it",
     "shortDescription": "REST service to retrieve data from BigQuery and CyberSec approach against SQLInjection",
+    "description": "Development of an optimal query to search data across materialized views and programmatically update materialized views, REST service built upon Quarkus with Vert.x to manage request asynchronously. Custom SQLInjection checker with in-memory H2 Database and custom JDBC Driver.",
     "icon":  "/SpiaggeLogo.jpg",
     "alt": "Spiagge.it Logo",
-    "skillNames": []
+    "skillNames": ["Java", "Quarkus", "Cloud Run", "BigQuery"]
   },
   {
     "name": "Azimut/FAST",
     "shortDescription": "Installation of the AllFounds' Fast Blockchain for Azimut. Case study of connecting two Cloud vendors environments.",
+    "description": "Installation of the AllFounds Blockchain Bank custom ethereum ledger, installed with Google Kubernetes Engine. Installation of CloudSQL PostgreSQL Database and Hashicorp Vault necessary for the participant nodes to properly work.",
     "icon":  "/Ethereum_logo.svg",
     "alt": "FAST Blockchain Coin Logo",
-    "skillNames": []
+    "skillNames": ["GKE", "Cloud SQL", "Compute Engine", "Cloud Storage", "BASH", "Hashicorp Vault"]
   },
   {
     "name": "Azimut/Reports",
     "shortDescription": "Tools for generating financial reports and elaborate billions of rows per second.",
+    "description": "Development of Web Tool to generate reports from billions of rows, reports contains the whole history of Azimut Life saving plans. Tool is used on a daily basis internally by Azimut (Ireland and Italy).<br/>The development involved also the migration of data from an external provider, importing a whooping 1PB of rows of historical data and elaborating financial indexes across all data.",
     "icon":  "/bigquery.svg",
     "alt": "Google BigQuery Logo",
-    "skillNames": []
+    "skillNames": ["BigQuery", "Liferay", "Java", "Apache Tomcat", "Compute Engine", "Cloud SQL", "Cloud Storage", "Cloud Run"]
   },
   {
     "name": "Azimut/NAV Engine",
     "shortDescription": "REST service for financial consultants to keep track of up-to-date NAV values, developed with Quarkus and Liferay.",
+    "description": "Development of Web Tool to navigate, compute and track NAV (Net Asset Value) from Azimut's Assets, development involved the search for a robust Ellyptic Curve for custom cryptography needed for the intranet communications (client request).",
     "icon":  "/QuarkusLogo.svg",
     "alt": "Quarkus Logo",
-    "skillNames": []
-  },
-  {
-    "name": "Azimut/Chatbot",
-    "shortDescription": "Intranet integration with Google's Dialogflow CX. A work developed along with Google as partner.",
-    "icon":  "/dialogflow_cx.svg",
-    "alt": "Dialogflow CX Logo",
-    "skillNames": []
+    "skillNames": ["Quarkus", "Liferay", "Java", "Apache Tomcat", "Compute Engine", "Cloud SQL", "Cloud Storage", "Cloud Run"]
   }
 ]

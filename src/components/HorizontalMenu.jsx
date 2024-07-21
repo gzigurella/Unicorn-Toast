@@ -4,11 +4,11 @@ import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa6";
 export default function VerticalMenu({}) {
     return (
         <div
-            className={"flex flex-col bg-white items-center justify-around gap-y-4 px-2 py-2 rounded-md text-2xl drop-shadow-lg"}>
+            className={"flex bg-white items-center justify-center gap-x-10 px-2 py-2 rounded-md text-2xl drop-shadow-lg"}>
             <a href={"mailto:gabriele.zigurella@pec.it"}
                className={"hover:cursor-pointer hover:text-red-500 group relative"}
             >
-                <FaEnvelope/>
+                <FaEnvelope size={42}/>
                 <div
                     className="bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute top-1/2 -translate-y-1/2 -right-2 translate-x-full"
                 >
@@ -21,7 +21,7 @@ export default function VerticalMenu({}) {
             <a href={"https://www.linkedin.com/in/gabrielezigurella?trk=public_profile_browsemap"} target={"_blank"}
                className={"hover:cursor-pointer hover:text-blue-500 group relative"}
             >
-                <FaLinkedin/>
+                <FaLinkedin size={42}/>
                 <div
                     className="bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute top-1/2 -translate-y-1/2 -right-2 translate-x-full"
                 >
@@ -34,7 +34,7 @@ export default function VerticalMenu({}) {
 
             <a href={"https://github.com/gzigurella"} target={"_blank"}
                className={"hover:cursor-pointer hover:text-gray-500 group relative"}>
-                <FaGithub/>
+                <FaGithub size={42}/>
                 <div
                     className="bg-zinc-800 p-2 rounded-md group-hover:flex hidden absolute top-1/2 -translate-y-1/2 -right-2 translate-x-full"
                 >
