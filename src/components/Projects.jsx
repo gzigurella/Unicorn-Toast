@@ -2,12 +2,8 @@
 
 import ProjectCard from './ProjectCard'
 import Image from "next/image";
-import {useEffect, useLayoutEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import ProjectModalBody from "@/components/ProjectModalBody";
-
-const buildModalBody = (project) => {
-    return (<ProjectModalBody description={project.description} skillNames={project.skillNames}/>)
-}
 
 const Loading = () => {
     return  (
@@ -47,11 +43,13 @@ export default ({projects}) => {
                         <div className="flex flex-col md:flex-wrap md:flex-row justify-start mt-4 gap-x-2 gap-y-4">
                             {projects && projects.length > 0 &&
                                 projects.map((project, idx) => {
-                                    return (<ProjectCard title={project.name}
-                                                         description={project.description}
-                                                         icon={<Image src={project.icon} width={70} height={70}
-                                                                      alt={project.alt}/>}
-                                                         modalBody={project}/>);
+                                    return (<ProjectCard
+                                                    key={`project-${idx}`}
+                                                    title={project.name}
+                                                    description={project.shortDescription}
+                                                    icon={<Image src={project.icon} width={70} height={70}
+                                                    alt={project.alt}/>}
+                                                    modalBody={<ProjectModalBody description={project.description} skillNames={project.skillNames}/>}/>);
                                 })
                             }
                         </div>

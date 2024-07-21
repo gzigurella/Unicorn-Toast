@@ -3,7 +3,6 @@ import { Button, Dialog, DialogPanel, DialogTitle, Transition, TransitionChild }
 import {FaWindowClose} from "react-icons/fa";
 
 export default function useContentModal(title, content) {
-
   let [isOpen, setIsOpen] = useState(false)
 
   function open() {
@@ -30,8 +29,8 @@ export default function useContentModal(title, content) {
                     leaveFrom="opacity-100 transform-[scale(100%)]"
                     leaveTo="opacity-0 transform-[scale(95%)]"
                 >
-                  <DialogPanel className="w-full max-w-md rounded-xl bg-gray-800 p-6">
-                    <DialogTitle as="h3" className="text-base/7 text-slate-200 font-medium">
+                  <DialogPanel className="w-full max-w-4xl rounded-xl bg-gray-800 p-6">
+                    <DialogTitle as="h2" className="text-2xl text-slate-200 font-medium">
                       <div className={'flex justify-between'}>
                         {title}
                         <button onClick={close}>
