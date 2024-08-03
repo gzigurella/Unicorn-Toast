@@ -6,6 +6,7 @@ const fetchSkill = (skillName) => {
         <div className={'flex flex-col gap-y-0.5 justify-between items-center'}>
             <Tooltip id={skillName} place={"bottom"}/>
             <Image data-tooltip-id={skillName} data-tooltip-content={skillName} key={skillName} src={`/Skills/${skillName}.svg`} alt={skillName} height={40} width={40} />
+            <div className={'md:hidden text-xs'}>{skillName}</div>
         </div>
     );
 }
